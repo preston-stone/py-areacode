@@ -1,2 +1,2 @@
 # py-areacode
-Areacode lookup tool in Python
+Command line areacode lookup tool in Python
