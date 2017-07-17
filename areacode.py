@@ -3,7 +3,6 @@
 import pycurl,argparse,xml.etree.ElementTree as ET
 from StringIO import StringIO
 
-
 class Areacode:
 
     xmlcitydata = None
@@ -14,7 +13,6 @@ class Areacode:
     regionresult = ''
     result = ''
     
-
     def __init__(self,areacode):
         parser = argparse.ArgumentParser(description='Area code lookup tool.')
         parser.add_argument('acode')
@@ -55,8 +53,6 @@ class Areacode:
         self.result = self.regionresult+'\n\n'
         self.result += self.cityresult
         print(self.result)
-
-
 
 acode = Areacode('215')
 acode.outputResults()
