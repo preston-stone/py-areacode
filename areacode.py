@@ -13,7 +13,7 @@ class Areacode:
     regionresult = ''
     result = ''
     
-    def __init__(self,areacode):
+    def __init__(self):
         parser = argparse.ArgumentParser(description='Area code lookup tool.')
         parser.add_argument('acode')
         self.args = parser.parse_args()
@@ -54,5 +54,5 @@ class Areacode:
         self.result += self.cityresult
         print(self.result)
 
-acode = Areacode('215')
+acode = Areacode()
 acode.outputResults()
